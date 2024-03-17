@@ -28,6 +28,7 @@ int knapsack(Item items[], int n, int capacity)
         return max(knapsack(items, n - 1, capacity), items[n - 1].value + knapsack(items, n - 1, capacity - items[n - 1].weight));
     }
 }
+
 int main()
 {
     Item items[MAX_ITEMS] = {{5, 20}, {3, 40}, {4, 30}};
