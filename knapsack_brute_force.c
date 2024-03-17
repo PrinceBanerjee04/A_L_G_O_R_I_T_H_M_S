@@ -1,7 +1,5 @@
 #include <stdio.h>
-
 #define MAX_ITEMS 10
-
 typedef struct
 {
     int weight;
@@ -29,7 +27,6 @@ int knapsack(Item items[], int n, int capacity)
         return max(knapsack(items, n - 1, capacity), items[n - 1].value + knapsack(items, n - 1, capacity - items[n - 1].weight));
     }
 }
-
 int main()
 {
     Item items[MAX_ITEMS] = {{5, 20}, {3, 40}, {4, 30}};
@@ -41,4 +38,4 @@ int main()
     printf("Maximum value that can be obtained: %d\n", max_value);
 
     return 0;
-}*/
+}
