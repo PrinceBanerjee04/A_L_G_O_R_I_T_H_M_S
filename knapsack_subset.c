@@ -1,3 +1,5 @@
+//USING BRUTE FORCE
+
 #include <stdio.h>
 #define MAX_ITEMS 10
 
