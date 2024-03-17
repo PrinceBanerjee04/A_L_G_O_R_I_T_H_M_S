@@ -1,5 +1,6 @@
 #include <stdio.h>
 #define MAX_ITEMS 10
+
 typedef struct
 {
     int weight;
