@@ -23,3 +23,20 @@ void swap(int* a, int* b) {
     *b = temp;
 }
 
+void permute(int** graph, int* path, int start, int n, int* minDistance, int* minPath) {
+    if (start == n - 1) {
+        int distance = calculateDistance(graph, path, n);
+        if (distance < *minDistance) {
+            *minDistance = distance;
+            for (int i = 0; i < n; i++) {
+                minPath[i] = path[i];
+            }
+        }
+        return;
+    }
+    for (int i = start; i < n; i++) {
+        swap(&path[start], &path[i]);
+        permute(graph, path, start + 1, n, minDistance, minPath);
+        swap(&path[start], &path[i]); // Backtrack
+    }
+}
