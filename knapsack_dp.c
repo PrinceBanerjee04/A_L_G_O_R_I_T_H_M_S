@@ -1,7 +1,10 @@
 // KNAPSACK PROBLEM (DYNAMIC PROGRAMMING)
 
 #include <stdio.h>
-int max(int a, int b) { return (a > b) ? a : b; }
+
+int max(int a, int b) { 
+    return (a > b) ? a : b; 
+}
 
 int knapSack(int W, int wt[], int val[], int n)
 {
