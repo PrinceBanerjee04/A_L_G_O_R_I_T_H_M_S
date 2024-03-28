@@ -60,3 +60,59 @@ void insertion_sort(int arr[], int n)
         print_array(arr, n);
     }
 }
+
+int main()
+{
+    clock_t start, end;
+    double cpu_time_used;
+    int n;
+    printf("Enter Array Size : ");
+    scanf("%d", &n);
+    int arr[n], i;
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("\nEnter 1 for Bubble Sort, 2 for Selection Sort, 3 for Insertion Sort : ");
+    int ch;
+    scanf("%d", &ch);
+    switch (ch)
+    {
+    case 1:
+        printf("Bubble Sort:\n");
+        start = clock();
+        bubble_sort(arr, n);
+        end = clock();
+        cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+        printf("Execution Time : %lf\n", cpu_time_used);
+        printf("Comparisons: %d\n", bc);
+        printf("Swaps: %d\n", bs);
+        break;
+
+    case 2:
+        printf("Selection Sort:\n");
+        start = clock();
+        selection_sort(arr, n);
+        end = clock();
+        cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+        printf("Execution Time : %lf\n", cpu_time_used);
+        printf("Comparisons: %d\n", sc);
+        printf("Swaps: %d\n", ss);
+        break;
+
+    case 3:
+        printf("Insertion Sort:\n");
+        start = clock();
+        insertion_sort(arr, n);
+        end = clock();
+        cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+        printf("Execution Time : %lf\n", cpu_time_used);
+        printf("Comparisons: %d\n", ic);
+        printf("Swaps: %d\n", is);
+        break;
+    default:
+        printf("WRONG CHOICE!!!");
+    }
+    return 0;
+}
