@@ -1,3 +1,15 @@
+void print_array(int arr[], int n)
+{
+    printf("[");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d", arr[i]);
+        if (i < n - 1)
+            printf(", ");
+    }
+    printf("]\n");
+}
+
 void bubble_sort(int arr[], int n)
 {
     int i, j, temp;
