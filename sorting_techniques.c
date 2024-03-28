@@ -39,3 +39,24 @@ void selection_sort(int arr[], int n)
         print_array(arr, n);
     }
 }
+
+void insertion_sort(int arr[], int n)
+{
+    int i, j, temp, min;
+    arr[0] = -999;
+    for (i = 1; i <= n; i++)
+    {
+        temp = arr[i];
+        min = i - 1;
+        while (arr[min] > temp)
+        {
+            ic++;
+            arr[min + 1] = arr[min];
+            min--;
+        }
+        arr[min + 1] = temp;
+        is++;
+        printf("After pass %d: ", i + 1);
+        print_array(arr, n);
+    }
+}
