@@ -67,6 +67,7 @@ int main()
     clock_t start, end;
     double mergeSortTime, bubbleSortTime;
 
+    // Generate random array
     for (int i = 0; i < n; i++)
     {
         arr1[i] = rand() % 1000;
