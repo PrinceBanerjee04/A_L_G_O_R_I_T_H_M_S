@@ -86,6 +86,7 @@ int main()
     end = clock();
     bubbleSortTime = ((double)(end - start)) / CLOCKS_PER_SEC;
 
+    // Print sorted array and execution times
     printf("Sorted array using Merge Sort:\n");
     for (int i = 0; i < n; i++)
     {
