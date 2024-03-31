@@ -30,6 +30,7 @@ void merge(int a[], int l1, int u1, int l2, int u2)
     }
 }
 
+// Merge Sort function
 void mergesort(int a[],int lower,int upper)
 {
     int mid;
