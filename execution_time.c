@@ -57,3 +57,43 @@ void bubbleSort(int arr[], int n)
         }
     }
 }
+
+int main()
+{
+    int n = 500;
+    int arr1[n], arr2[n];
+    clock_t start, end;
+    double mergeSortTime, bubbleSortTime;
+
+    for (int i = 0; i < n; i++)
+    {
+        arr1[i] = rand() % 1000;
+        arr2[i] = arr1[i];
+    }
+
+    start = clock();
+    mergesort(arr1, 0, n - 1);
+    end = clock();
+    mergeSortTime = ((double)(end - start)) / CLOCKS_PER_SEC;
+
+    start = clock();
+    bubbleSort(arr2, n);
+    end = clock();
+    bubbleSortTime = ((double)(end - start)) / CLOCKS_PER_SEC;
+
+    printf("Sorted array using Merge Sort:\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", arr1[i]);
+    }
+    printf("\nMerge Sort Time: %f seconds\n\n", mergeSortTime);
+
+    printf("Sorted array using Bubble Sort:\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", arr2[i]);
+    }
+    printf("\nBubble Sort Time: %f seconds\n", bubbleSortTime);
+
+    return 0;
+}
