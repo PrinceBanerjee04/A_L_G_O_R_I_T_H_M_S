@@ -80,6 +80,7 @@ int main()
     end = clock();
     mergeSortTime = ((double)(end - start)) / CLOCKS_PER_SEC;
 
+    // Measure time taken by bubble sort
     start = clock();
     bubbleSort(arr2, n);
     end = clock();
