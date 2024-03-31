@@ -43,6 +43,7 @@ void mergesort(int a[],int lower,int upper)
     }
 }
 
+// Bubble Sort function
 void bubbleSort(int arr[], int n)
 {
     for (int i = 0; i < n - 1; i++)
