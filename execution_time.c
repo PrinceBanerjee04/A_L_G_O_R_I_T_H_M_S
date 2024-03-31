@@ -74,6 +74,7 @@ int main()
         arr2[i] = arr1[i];
     }
 
+    // Measure time taken by merge sort
     start = clock();
     mergesort(arr1, 0, n - 1);
     end = clock();
