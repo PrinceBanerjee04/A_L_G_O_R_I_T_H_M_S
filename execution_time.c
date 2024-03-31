@@ -29,3 +29,15 @@ void merge(int a[], int l1, int u1, int l2, int u2)
         a[q] = d[n];
     }
 }
+
+void mergesort(int a[],int lower,int upper)
+{
+    int mid;
+    if (upper > lower)
+    {
+        mid = (upper + lower) / 2;
+        mergesort(a, lower, mid);
+        mergesort(a, mid + 1, upper);
+        merge(a, lower, mid, mid + 1, upper);
+    }
+}
