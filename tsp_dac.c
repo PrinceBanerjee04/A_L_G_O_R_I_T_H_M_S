@@ -61,3 +61,42 @@ int* tspDivideAndConquer(int** graph, int* path, int n, int* minDistance) {
     return mergedPath;
 }
 
+
+int main() {
+    int n;
+    printf("Enter the number of cities: ");
+    scanf("%d", &n);
+
+    int** graph = (int**)malloc(n * sizeof(int*));
+    for (int i = 0; i < n; i++) {
+        graph[i] = (int*)malloc(n * sizeof(int));
+        for (int j = 0; j < n; j++) {
+            printf("Enter the distance between city %d and city %d: ", i, j);
+            scanf("%d", &graph[i][j]);
+        }
+    }
+
+    int* path = (int*)malloc(n * sizeof(int));
+    for (int i = 0; i < n; i++) {
+        path[i] = i;
+    }
+
+    int minDistance = INT_MAX;
+
+    int* minPath = tspDivideAndConquer(graph, path, n, &minDistance);
+
+    printf("Shortest Hamiltonian cycle: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", minPath[i]);
+    }
+    printf("\nTotal distance: %d\n", minDistance);
+
+    for (int i = 0; i < n; i++) {
+        free(graph[i]);
+    }
+    free(graph);
+    free(path);
+    free(minPath);
+
+    return 0;
+}
