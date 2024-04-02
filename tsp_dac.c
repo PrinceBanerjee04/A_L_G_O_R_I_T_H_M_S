@@ -6,3 +6,9 @@ int calculateDistance(int** graph, int* path, int n) {
     distance += graph[path[n - 1]][path[0]]; // Return to the starting city
     return distance;
 }
+
+void swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
