@@ -8,3 +8,8 @@ int calculateDistance(int** graph, int* path, int n) {
     return distance;
 }
 
+void swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
