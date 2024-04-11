@@ -17,6 +17,7 @@ void sum_of_subsets(int numbers[], int target_sum, int subset[], int subset_size
     subset[subset_size] = numbers[index];
     sum_of_subsets(numbers, target_sum, subset, subset_size + 1, index + 1, sum_so_far + numbers[index]);
 }
+
 int main() {
     int numbers[] = {10, 7, 5, 18, 12, 20, 15};
     int target_sum = 35;
