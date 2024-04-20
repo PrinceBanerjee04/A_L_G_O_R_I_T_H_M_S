@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 int graph[MAX_NODES][MAX_NODES];
 int visited[MAX_NODES];
 int numNodes;
