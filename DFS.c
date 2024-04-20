@@ -8,3 +8,29 @@ void dfs(int node) {
         }
     }
 }
+int main() {
+    int numEdges;
+    int startNode;
+
+    printf("Enter the number of nodes: ");
+    scanf("%d", &numNodes);
+
+    printf("Enter the number of edges: ");
+    scanf("%d", &numEdges);
+
+    printf("Enter the edges (node1 node2):\n");
+    for (int i = 0; i < numEdges; i++) {
+        int node1, node2;
+        scanf("%d %d", &node1, &node2);
+        graph[node1][node2] = graph[node2][node1] = 1;
+    }
+
+    printf("Enter the start node: ");
+    scanf("%d", &startNode);
+
+    printf("DFS traversal starting from node %d: ", startNode);
+    dfs(startNode);
+    printf("\n");
+
+    return 0;
+}
