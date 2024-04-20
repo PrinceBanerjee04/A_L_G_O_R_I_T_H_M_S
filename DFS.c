@@ -1,3 +1,6 @@
+int graph[MAX_NODES][MAX_NODES];
+int visited[MAX_NODES];
+int numNodes;
 void dfs(int node) {
     printf("%d ", node);
     visited[node] = 1;
