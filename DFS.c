@@ -17,7 +17,8 @@ void dfs(int node)
     }
 }
 
-int main() {
+int main() 
+{
     int numEdges;
     int startNode;
 
