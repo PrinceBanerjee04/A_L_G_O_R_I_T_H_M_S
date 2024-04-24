@@ -12,7 +12,8 @@ void sum_of_subsets(int numbers[], int target_sum, int subset[], int subset_size
         printf("}\n");
         return;
     }
-    if (index >= sizeof(numbers)/sizeof(numbers[0]) || sum_so_far > target_sum) {
+    if (index >= sizeof(numbers)/sizeof(numbers[0]) || sum_so_far > target_sum) 
+    {
         return;
     }
     sum_of_subsets(numbers, target_sum, subset, subset_size, index + 1, sum_so_far);
