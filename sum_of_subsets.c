@@ -5,7 +5,8 @@ void sum_of_subsets(int numbers[], int target_sum, int subset[], int subset_size
 {
     if (sum_so_far == target_sum) {
         printf("{ ");
-        for (int i = 0; i < subset_size; i++) {
+        for (int i = 0; i < subset_size; i++) 
+        {
             printf("%d ", subset[i]);
         }
         printf("}\n");
