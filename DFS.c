@@ -31,7 +31,8 @@ int main()
     scanf("%d", &numEdges);
 
     printf("Enter the edges (node1 node2):\n");
-    for (int i = 0; i < numEdges; i++) {
+    for (int i = 0; i < numEdges; i++) 
+    {
         int node1, node2;
         scanf("%d %d", &node1, &node2);
         graph[node1][node2] = graph[node2][node1] = 1;
