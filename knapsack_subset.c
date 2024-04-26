@@ -29,7 +29,8 @@ int knapsack(Item items[], int n, int capacity, int *subset)
         int include = items[n - 1].value + knapsack(items, n - 1, capacity - items[n - 1].weight, subset - 1);
         int exclude = knapsack(items, n - 1, capacity, subset);
 
-        if (include > exclude) {
+        if (include > exclude) 
+        {
             *subset = n - 1;
             return include;
         } else {
