@@ -33,7 +33,8 @@ int knapsack(Item items[], int n, int capacity, int *subset)
         {
             *subset = n - 1;
             return include;
-        } else {
+        } else 
+        {
             return exclude;
         }
     }
