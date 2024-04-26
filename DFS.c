@@ -13,7 +13,8 @@ void dfs(int node)
     visited[node] = 1;
 
     for (int i = 0; i < numNodes; i++) {
-        if (graph[node][i] && !visited[i]) {
+        if (graph[node][i] && !visited[i]) 
+        {
             dfs(i);
         }
     }
