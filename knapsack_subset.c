@@ -14,7 +14,8 @@ int max(int a, int b)
     return (a > b) ? a : b;
 }
 
-int knapsack(Item items[], int n, int capacity, int *subset) {
+int knapsack(Item items[], int n, int capacity, int *subset) 
+{
     if (n == 0 || capacity == 0) {
         return 0;
     }
