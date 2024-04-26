@@ -3,7 +3,8 @@
 #include <stdio.h>
 #define MAX_ITEMS 10
 
-typedef struct {
+typedef struct 
+{
     int weight;
     int value;
 } Item;
