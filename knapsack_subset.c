@@ -51,7 +51,8 @@ int main() {
     printf("Maximum value that can be obtained: %d\n", max_value);
 
     printf("Selected items (index): ");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         if (subset[i] == 1) {
             printf("%d ", i);
         }
