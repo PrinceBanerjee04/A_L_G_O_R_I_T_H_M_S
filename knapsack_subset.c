@@ -41,8 +41,7 @@ int knapsack(Item items[], int n, int capacity, int *subset)
 }
 
 int main() {
-    Item items[MAX_ITEMS] = {{2, 10},{3, 15},{5, 25},{7, 30}
-    };
+    Item items[MAX_ITEMS] = {{2, 10},{3, 15},{5, 25},{7, 30}};
 
     int n = sizeof(items) / sizeof(items[0]);
     int capacity = 10;
