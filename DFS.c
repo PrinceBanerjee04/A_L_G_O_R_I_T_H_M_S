@@ -4,7 +4,7 @@
 #define MAX_NODES 100
 
 int graph[MAX_NODES][MAX_NODES];    // Adjacency matrix to represent the graph
-int visited[MAX_NODES];
+int visited[MAX_NODES];            // Array to keep track of visited nodes
 int numNodes;
 
 void dfs(int node) 
