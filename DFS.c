@@ -10,7 +10,7 @@ int numNodes;                     // Number of nodes in the graph
 // Depth First Search (DFS) function to traverse the graph
 void dfs(int node) 
 {
-    printf("%d ", node);
+    printf("%d ", node);    // Print the current node
     visited[node] = 1;
 
     for (int i = 0; i < numNodes; i++) 
