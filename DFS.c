@@ -7,6 +7,7 @@ int graph[MAX_NODES][MAX_NODES];    // Adjacency matrix to represent the graph
 int visited[MAX_NODES];            // Array to keep track of visited nodes
 int numNodes;                     // Number of nodes in the graph
 
+// Depth First Search (DFS) function to traverse the graph
 void dfs(int node) 
 {
     printf("%d ", node);
