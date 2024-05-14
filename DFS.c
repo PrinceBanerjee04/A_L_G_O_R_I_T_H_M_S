@@ -3,7 +3,7 @@
 
 #define MAX_NODES 100
 
-int graph[MAX_NODES][MAX_NODES];
+int graph[MAX_NODES][MAX_NODES];    // Adjacency matrix to represent the graph
 int visited[MAX_NODES];
 int numNodes;
 
