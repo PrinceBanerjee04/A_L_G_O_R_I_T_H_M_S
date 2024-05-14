@@ -13,6 +13,7 @@ void dfs(int node)
     printf("%d ", node);    // Print the current node
     visited[node] = 1;    // Mark the current node as visited
 
+    // Traverse all nodes connected to the current node
     for (int i = 0; i < numNodes; i++) 
     {
         if (graph[node][i] && !visited[i]) 
