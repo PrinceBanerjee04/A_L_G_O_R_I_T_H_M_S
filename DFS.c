@@ -5,7 +5,7 @@
 
 int graph[MAX_NODES][MAX_NODES];    // Adjacency matrix to represent the graph
 int visited[MAX_NODES];            // Array to keep track of visited nodes
-int numNodes;
+int numNodes;                     // Number of nodes in the graph
 
 void dfs(int node) 
 {
