@@ -11,7 +11,7 @@ int numNodes;                     // Number of nodes in the graph
 void dfs(int node) 
 {
     printf("%d ", node);    // Print the current node
-    visited[node] = 1;
+    visited[node] = 1;    // Mark the current node as visited
 
     for (int i = 0; i < numNodes; i++) 
     {
