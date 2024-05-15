@@ -47,6 +47,7 @@ int main()
     printf("Enter the start node: ");
     scanf("%d", &startNode);
 
+    // Perform DFS traversal starting from the specified start node
     printf("DFS traversal starting from node %d: ", startNode);
     dfs(startNode);
     printf("\n");
