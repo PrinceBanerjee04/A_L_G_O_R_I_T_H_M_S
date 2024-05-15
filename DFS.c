@@ -19,7 +19,7 @@ void dfs(int node)
         // Check if there is an edge between the current node and node i, and if node i has not been visited
         if (graph[node][i] && !visited[i]) 
         {
-            dfs(i);
+            dfs(i);    // Recursively call DFS on node i
         }
     }
 }
