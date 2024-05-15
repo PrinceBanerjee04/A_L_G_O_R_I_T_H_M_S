@@ -16,6 +16,7 @@ void dfs(int node)
     // Traverse all nodes connected to the current node
     for (int i = 0; i < numNodes; i++) 
     {
+        // Check if there is an edge between the current node and node i, and if node i has not been visited
         if (graph[node][i] && !visited[i]) 
         {
             dfs(i);
