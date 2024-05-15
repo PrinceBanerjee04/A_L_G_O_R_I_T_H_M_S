@@ -43,6 +43,7 @@ int main()
         graph[node1][node2] = graph[node2][node1] = 1;
     }
 
+    // Input the start node for DFS traversal
     printf("Enter the start node: ");
     scanf("%d", &startNode);
 
