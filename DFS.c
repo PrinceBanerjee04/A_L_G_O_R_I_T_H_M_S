@@ -35,6 +35,7 @@ int main()
     printf("Enter the number of edges: ");
     scanf("%d", &numEdges);
 
+    // Input the edges (connections between nodes)
     printf("Enter the edges (node1 node2):\n");
     for (int i = 0; i < numEdges; i++) 
     {
