@@ -32,6 +32,7 @@ int main()
     printf("Enter the number of nodes: ");
     scanf("%d", &numNodes);
 
+    // Input the number of edges in the graph
     printf("Enter the number of edges: ");
     scanf("%d", &numEdges);
 
