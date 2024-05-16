@@ -29,6 +29,7 @@ int main()
     int numEdges;    // Number of edges in the graph
     int startNode;  // Starting node for DFS traversal
 
+    // Input the number of nodes in the graph
     printf("Enter the number of nodes: ");
     scanf("%d", &numNodes);
 
