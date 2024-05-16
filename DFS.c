@@ -40,7 +40,7 @@ int main()
     {
         int node1, node2;
         scanf("%d %d", &node1, &node2);
-        graph[node1][node2] = graph[node2][node1] = 1;
+        graph[node1][node2] = graph[node2][node1] = 1;    // Mark the edge between node1 and node2
     }
 
     // Input the start node for DFS traversal
