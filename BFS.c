@@ -1,3 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+#define MAX_NODES 100
+
+int graph[MAX_NODES][MAX_NODES];
+bool visited[MAX_NODES];
+int queue[MAX_NODES];
+int front = -1, rear = -1;
+
 void enqueue(int node) {
     if (rear == MAX_NODES - 1) {
         printf("Queue is full.\n");
