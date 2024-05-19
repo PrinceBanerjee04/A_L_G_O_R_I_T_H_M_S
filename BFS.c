@@ -40,3 +40,29 @@ void bfs(int start, int numNodes) {
         }
     }
 }
+
+int main() {
+    int numNodes, numEdges;
+    printf("Enter the number of nodes: ");
+    scanf("%d", &numNodes);
+
+    printf("Enter the number of edges: ");
+    scanf("%d", &numEdges);
+
+    printf("Enter the edges (node1 node2):\n");
+    for (int i = 0; i < numEdges; i++) {
+        int node1, node2;
+        scanf("%d %d", &node1, &node2);
+        graph[node1][node2] = graph[node2][node1] = 1;
+    }
+
+    int startNode;
+    printf("Enter the start node: ");
+    scanf("%d", &startNode);
+
+    printf("BFS traversal starting from node %d: ", startNode);
+    bfs(startNode, numNodes);
+    printf("\n");
+
+    return 0;
+}
