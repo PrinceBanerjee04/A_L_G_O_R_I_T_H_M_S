@@ -23,3 +23,20 @@ int dequeue() {
 bool isQueueEmpty() {
     return front == -1 || front > rear;
 }
+
+void bfs(int start, int numNodes) {
+    visited[start] = true;
+    enqueue(start);
+
+    while (!isQueueEmpty()) {
+        int currentNode = dequeue();
+        printf("%d ", currentNode);
+
+        for (int i = 0; i < numNodes; i++) {
+            if (graph[currentNode][i] && !visited[i]) {
+                visited[i] = true;
+                enqueue(i);
+            }
+        }
+    }
+}
