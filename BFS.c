@@ -7,6 +7,7 @@
 
 // Graph adjacency matrix
 int graph[MAX_NODES][MAX_NODES];
+// Array to track visited nodes
 bool visited[MAX_NODES];
 int queue[MAX_NODES];
 int front = -1, rear = -1;
