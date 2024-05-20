@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+// Define the maximum number of nodes in the graph
 #define MAX_NODES 100
 
 int graph[MAX_NODES][MAX_NODES];
