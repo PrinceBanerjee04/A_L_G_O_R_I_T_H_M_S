@@ -53,8 +53,8 @@ void bfs(int start, int numNodes) {
         for (int i = 0; i < numNodes; i++) {
             // If there is an edge and the node is not visited
             if (graph[currentNode][i] && !visited[i]) {
-                visited[i] = true;
-                enqueue(i);
+                visited[i] = true;     // Mark the node as visited
+                enqueue(i);    // Enqueue the node
             }
         }
     }
