@@ -71,7 +71,7 @@ int main() {
     printf("Enter the edges (node1 node2):\n");
     for (int i = 0; i < numEdges; i++) {
         int node1, node2;
-        scanf("%d %d", &node1, &node2);
+        scanf("%d %d", &node1, &node2);    // Read each edge
         // Populate the adjacency matrix for an undirected graph
         graph[node1][node2] = graph[node2][node1] = 1;
     }
