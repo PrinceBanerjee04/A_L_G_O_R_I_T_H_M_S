@@ -81,7 +81,7 @@ int main() {
     scanf("%d", &startNode);
 
     printf("BFS traversal starting from node %d: ", startNode);
-    bfs(startNode, numNodes);
+    bfs(startNode, numNodes);    // Perform BFS starting from the start node
     printf("\n");
 
     return 0;
