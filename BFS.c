@@ -49,7 +49,9 @@ void bfs(int start, int numNodes) {
         int currentNode = dequeue();
         printf("%d ", currentNode);
 
+        // Iterate through all possible nodes
         for (int i = 0; i < numNodes; i++) {
+            // If there is an edge and the node is not visited
             if (graph[currentNode][i] && !visited[i]) {
                 visited[i] = true;
                 enqueue(i);
