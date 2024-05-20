@@ -40,6 +40,7 @@ bool isQueueEmpty() {
     return front == -1 || front > rear;
 }
 
+// BFS function to traverse the graph from a start node
 void bfs(int start, int numNodes) {
     visited[start] = true;
     enqueue(start);
