@@ -42,8 +42,8 @@ bool isQueueEmpty() {
 
 // BFS function to traverse the graph from a start node
 void bfs(int start, int numNodes) {
-    visited[start] = true;
-    enqueue(start);
+    visited[start] = true;    // Mark the start node as visited
+    enqueue(start);    // Enqueue the start node
 
     while (!isQueueEmpty()) {
         int currentNode = dequeue();
