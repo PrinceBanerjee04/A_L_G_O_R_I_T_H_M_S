@@ -5,6 +5,7 @@
 // Define the maximum number of nodes in the graph
 #define MAX_NODES 100
 
+// Graph adjacency matrix
 int graph[MAX_NODES][MAX_NODES];
 bool visited[MAX_NODES];
 int queue[MAX_NODES];
