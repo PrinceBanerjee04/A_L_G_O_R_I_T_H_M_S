@@ -49,3 +49,14 @@ Graph* createGraph(int numVertices) {
 
     return graph;
 }
+
+// Add an edge to the graph
+void addEdge(Graph* graph, int src, int dest) {
+    Node* newNode = createNode(dest);
+    newNode->next = graph->array[src].head;
+    graph->array[src].head = newNode;
+
+    newNode = createNode(src);
+    newNode->next = graph->array[dest].head;
+    graph->array[dest].head = newNode;
+}
