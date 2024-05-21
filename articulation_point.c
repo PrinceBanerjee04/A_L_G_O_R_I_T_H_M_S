@@ -8,3 +8,14 @@ typedef struct Node {
 typedef struct {
     Node* head;
 } AdjList;
+
+// Graph structure
+typedef struct {
+    int numVertices;
+    AdjList* array;
+    int* discovery_time;
+    int* low_time;
+    bool* visited;
+    bool* is_articulation_point;
+    int time;
+} Graph;
