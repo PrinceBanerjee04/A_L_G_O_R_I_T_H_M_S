@@ -60,3 +60,28 @@ void addEdge(Graph* graph, int src, int dest) {
     newNode->next = graph->array[dest].head;
     graph->array[dest].head = newNode;
 }
+
+// DFS function to find articulation points
+void DFS(Graph* graph, int v, int parent) {
+    graph->visited[v] = true;
+    graph->discovery_time[v] = graph->low_time[v] = ++graph->time;
+    int children = 0;
+
+    for (Node* i = graph->array[v].head; i != NULL; i = i->next) {
+        int u = i->vertex;
+
+        if (!graph->visited[u]) {
+            children++;
+            DFS(graph, u, v);
+            graph->low_time[v] = (graph->low_time[v] < graph->low_time[u]) ? graph->low_time[v] : graph->low_time[u];
+
+            if (graph->low_time[u] >= graph->discovery_time[v] && parent != -1)
+                graph->is_articulation_point[v] = true;
+        }
+        else if (u != parent)
+            graph->low_time[v] = (graph->low_time[v] < graph->discovery_time[u]) ? graph->low_time[v] : graph->discovery_time[u];
+    }
+
+    if (parent == -1 && children > 1)
+        graph->is_articulation_point[v] = true;
+}
