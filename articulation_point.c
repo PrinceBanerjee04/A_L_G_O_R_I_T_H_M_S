@@ -85,3 +85,19 @@ void DFS(Graph* graph, int v, int parent) {
     if (parent == -1 && children > 1)
         graph->is_articulation_point[v] = true;
 }
+
+// Find articulation points in the graph
+void findArticulationPoints(Graph* graph) {
+    for (int i = 0; i < graph->numVertices; ++i) {
+        if (!graph->visited[i]) {
+            DFS(graph, i, -1);
+        }
+    }
+
+    printf("Articulation points in the graph:\n");
+    for (int i = 0; i < graph->numVertices; ++i) {
+        if (graph->is_articulation_point[i]) {
+            printf("%d\n", i);
+        }
+    }
+}
