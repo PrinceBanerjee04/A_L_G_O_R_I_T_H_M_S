@@ -19,3 +19,11 @@ typedef struct {
     bool* is_articulation_point;
     int time;
 } Graph;
+
+// Create a new adjacency list node
+Node* createNode(int v) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->vertex = v;
+    newNode->next = NULL;
+    return newNode;
+}
