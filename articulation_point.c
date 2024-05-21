@@ -27,3 +27,25 @@ Node* createNode(int v) {
     newNode->next = NULL;
     return newNode;
 }
+
+// Initialize a graph with given number of vertices
+Graph* createGraph(int numVertices) {
+    Graph* graph = (Graph*)malloc(sizeof(Graph));
+    graph->numVertices = numVertices;
+    graph->array = (AdjList*)malloc(numVertices * sizeof(AdjList));
+    graph->discovery_time = (int*)malloc(numVertices * sizeof(int));
+    graph->low_time = (int*)malloc(numVertices * sizeof(int));
+    graph->visited = (bool*)malloc(numVertices * sizeof(bool));
+    graph->is_articulation_point = (bool*)malloc(numVertices * sizeof(bool));
+    graph->time = 0;
+
+    for (int i = 0; i < numVertices; ++i) {
+        graph->array[i].head = NULL;
+        graph->discovery_time[i] = -1;
+        graph->low_time[i] = -1;
+        graph->visited[i] = false;
+        graph->is_articulation_point[i] = false;
+    }
+
+    return graph;
+}
