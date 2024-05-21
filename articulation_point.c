@@ -101,3 +101,26 @@ void findArticulationPoints(Graph* graph) {
         }
     }
 }
+
+// Main function
+int main() {
+    int numVertices, numEdges;
+    printf("Enter the number of vertices: ");
+    scanf("%d", &numVertices);
+
+    Graph* graph = createGraph(numVertices);
+
+    printf("Enter the number of edges: ");
+    scanf("%d", &numEdges);
+
+    printf("Enter the edges (source destination):\n");
+    for (int i = 0; i < numEdges; ++i) {
+        int src, dest;
+        scanf("%d %d", &src, &dest);
+        addEdge(graph, src, dest);
+    }
+
+    findArticulationPoints(graph);
+
+    return 0;
+}
