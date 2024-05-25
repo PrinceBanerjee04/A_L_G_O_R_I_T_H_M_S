@@ -59,3 +59,17 @@ void minHeapify(PriorityQueue* queue, int idx) {
         minHeapify(queue, smallest);
     }
 }
+
+// Check if size of heap is 1
+int isSizeOne(PriorityQueue* queue) {
+    return queue->size == 1;
+}
+
+// Extract minimum node from priority queue
+Node* extractMin(PriorityQueue* queue) {
+    Node* temp = queue->array[0];
+    queue->array[0] = queue->array[queue->size - 1];
+    --queue->size;
+    minHeapify(queue, 0);
+    return temp;
+}
