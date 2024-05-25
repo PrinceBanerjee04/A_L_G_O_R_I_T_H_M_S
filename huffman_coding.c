@@ -16,3 +16,12 @@ typedef struct PriorityQueue {
     unsigned capacity;
     Node** array;
 } PriorityQueue;
+
+// Function to create a priority queue
+PriorityQueue* createPriorityQueue(unsigned capacity) {
+    PriorityQueue* queue = (PriorityQueue*)malloc(sizeof(PriorityQueue));
+    queue->size = 0;
+    queue->capacity = capacity;
+    queue->array = (Node**)malloc(queue->capacity * sizeof(Node*));
+    return queue;
+}
