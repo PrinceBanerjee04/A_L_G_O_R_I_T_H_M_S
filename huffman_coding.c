@@ -84,3 +84,20 @@ void insertNode(PriorityQueue* queue, Node* node) {
     }
     queue->array[i] = node;
 }
+
+// Function to build Huffman tree
+Node* buildHuffmanTree(char data[], int freq[], int size) {
+    Node *left, *right, *top;
+    PriorityQueue* queue = createPriorityQueue(size);
+    for (int i = 0; i < size; ++i)
+        insertNode(queue, newNode(data[i], freq[i]));
+    while (!isSizeOne(queue)) {
+        left = extractMin(queue);
+        right = extractMin(queue);
+        top = newNode('$', left->freq + right->freq);
+        top->left = left;
+        top->right = right;
+        insertNode(queue, top);
+    }
+    return extractMin(queue);
+}
