@@ -73,3 +73,14 @@ Node* extractMin(PriorityQueue* queue) {
     minHeapify(queue, 0);
     return temp;
 }
+
+// Insert a new node into priority queue
+void insertNode(PriorityQueue* queue, Node* node) {
+    ++queue->size;
+    int i = queue->size - 1;
+    while (i && node->freq < queue->array[(i - 1) / 2]->freq) {
+        queue->array[i] = queue->array[(i - 1) / 2];
+        i = (i - 1) / 2;
+    }
+    queue->array[i] = node;
+}
