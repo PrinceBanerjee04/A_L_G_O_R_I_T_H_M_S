@@ -102,6 +102,24 @@ Node* buildHuffmanTree(char data[], int freq[], int size) {
     return extractMin(queue);
 }
 
+// Function to print Huffman codes from the root of Huffman tree
+void printCodes(Node* root, int arr[], int top) {
+    if (root->left) {
+        arr[top] = 0;
+        printCodes(root->left, arr, top + 1);
+    }
+    if (root->right) {
+        arr[top] = 1;
+        printCodes(root->right, arr, top + 1);
+    }
+    if (!root->left && !root->right) {
+        printf("%c: ", root->data);
+        for (int i = 0; i < top; ++i)
+            printf("%d", arr[i]);
+        printf("\n");
+    }
+}
+
 // Huffman coding function
 void HuffmanCodes(char data[], int freq[], int size) {
     Node* root = buildHuffmanTree(data, freq, size);
