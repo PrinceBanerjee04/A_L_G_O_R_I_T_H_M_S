@@ -126,3 +126,12 @@ void HuffmanCodes(char data[], int freq[], int size) {
     int arr[MAX_VERTICES], top = 0;
     printCodes(root, arr, top);
 }
+
+int main() {
+    char data[] = { 'a', 'b', 'c', 'd', 'e', 'f' };
+    int freq[] = { 5, 9, 12, 13, 16, 45 };
+    int size = sizeof(data) / sizeof(data[0]);
+    printf("Huffman Codes:\n");
+    HuffmanCodes(data, freq, size);
+    return 0;
+}
