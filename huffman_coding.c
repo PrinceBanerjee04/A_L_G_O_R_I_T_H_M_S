@@ -101,3 +101,10 @@ Node* buildHuffmanTree(char data[], int freq[], int size) {
     }
     return extractMin(queue);
 }
+
+// Huffman coding function
+void HuffmanCodes(char data[], int freq[], int size) {
+    Node* root = buildHuffmanTree(data, freq, size);
+    int arr[MAX_VERTICES], top = 0;
+    printCodes(root, arr, top);
+}
