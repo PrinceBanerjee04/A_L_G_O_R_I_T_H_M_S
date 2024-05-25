@@ -34,3 +34,28 @@ PriorityQueue* createPriorityQueue(unsigned capacity) {
     queue->array = (Node**)malloc(queue->capacity * sizeof(Node*));
     return queue;
 }
+
+// Function to swap two nodes in the priority queue
+void swapNode(Node** a, Node** b) {
+    Node* temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+// Standard min heapify function
+void minHeapify(PriorityQueue* queue, int idx) {
+    int smallest = idx;
+    int left = 2 * idx + 1;
+    int right = 2 * idx + 2;
+
+    if (left < queue->size && queue->array[left]->freq < queue->array[smallest]->freq)
+        smallest = left;
+
+    if (right < queue->size && queue->array[right]->freq < queue->array[smallest]->freq)
+        smallest = right;
+
+    if (smallest != idx) {
+        swapNode(&queue->array[smallest], &queue->array[idx]);
+        minHeapify(queue, smallest);
+    }
+}
