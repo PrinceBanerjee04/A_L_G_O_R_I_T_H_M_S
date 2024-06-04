@@ -74,3 +74,22 @@ void kruskalMST() {
 
     free(subsets);
 }
+
+int main() {
+    printf("Enter the number of nodes: ");
+    scanf("%d", &numNodes);
+
+    printf("Enter the number of edges: ");
+    scanf("%d", &numEdges);
+
+    Edge edges[numEdges];
+
+    printf("Enter the edges (source destination weight):\n");
+    for (int i = 0; i < numEdges; i++) {
+        scanf("%d %d %d", &edges[i].src, &edges[i].dest, &edges[i].weight);
+    }
+
+    kruskalMST();
+
+    return 0;
+}
