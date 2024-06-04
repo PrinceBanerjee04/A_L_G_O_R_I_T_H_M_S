@@ -7,3 +7,10 @@
 typedef struct {
     int src, dest, weight;
 } Edge;
+
+typedef struct {
+    int parent, rank;
+} Subset;
+
+int graph[MAX_NODES][MAX_NODES];
+int numNodes, numEdges;
