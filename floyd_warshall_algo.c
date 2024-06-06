@@ -8,7 +8,7 @@
 void floydWarshall(int graph[V][V], int numVertices) 
 {
     int dist[V][V];
-    
+    // Initialize the solution matrix same as the input graph matrix.
     for (int i = 0; i < numVertices; i++) 
     {
         for (int j = 0; j < numVertices; j++) 
