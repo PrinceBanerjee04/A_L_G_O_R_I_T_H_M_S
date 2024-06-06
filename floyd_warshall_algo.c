@@ -5,7 +5,8 @@
 
 #define V 100 
 
-void floydWarshall(int graph[V][V], int numVertices) {
+void floydWarshall(int graph[V][V], int numVertices) 
+{
     int dist[V][V];
     
     for (int i = 0; i < numVertices; i++) {
