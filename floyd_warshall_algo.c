@@ -11,7 +11,8 @@ void floydWarshall(int graph[V][V], int numVertices)
     
     for (int i = 0; i < numVertices; i++) 
     {
-        for (int j = 0; j < numVertices; j++) {
+        for (int j = 0; j < numVertices; j++) 
+        {
             dist[i][j] = graph[i][j];
         }
     }
