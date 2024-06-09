@@ -60,6 +60,5 @@ int main() {
     }
 
     floydWarshall(graph, numVertices);
-
     return 0;
 }
