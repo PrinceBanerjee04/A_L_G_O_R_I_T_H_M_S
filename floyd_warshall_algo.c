@@ -49,7 +49,6 @@ int main() {
     
     printf("Enter the number of vertices: ");
     scanf("%d", &numVertices);
-
     int graph[V][V];
 
     printf("Enter the adjacency matrix (use %d for infinity):\n", INT_MAX);
