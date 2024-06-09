@@ -30,3 +30,17 @@ void floydWarshall(int graph[V][V], int numVertices)
             }
         }
     }
+
+// Print the shortest distance matrix.
+    printf("Shortest distances between every pair of vertices:\n");
+    for (int i = 0; i < numVertices; i++) {
+        for (int j = 0; j < numVertices; j++) {
+            if (dist[i][j] == INT_MAX) {
+                printf("INF ");
+            } else {
+                printf("%d ", dist[i][j]);
+            }
+        }
+        printf("\n");
+    }
+}
