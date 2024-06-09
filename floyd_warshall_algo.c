@@ -44,3 +44,23 @@ void floydWarshall(int graph[V][V], int numVertices)
         printf("\n");
     }
 }
+
+int main() {
+    int numVertices;
+    
+    printf("Enter the number of vertices: ");
+    scanf("%d", &numVertices);
+
+    int graph[V][V];
+
+    printf("Enter the adjacency matrix (use %d for infinity):\n", INT_MAX);
+    for (int i = 0; i < numVertices; i++) {
+        for (int j = 0; j < numVertices; j++) {
+            scanf("%d", &graph[i][j]);
+        }
+    }
+
+    floydWarshall(graph, numVertices);
+
+    return 0;
+}
