@@ -20,7 +20,8 @@ void floydWarshall(int graph[V][V], int numVertices)
     for (int k = 0; k < numVertices; k++) 
     {
         // Pick all vertices as source one by one.
-        for (int i = 0; i < numVertices; i++) {
+        for (int i = 0; i < numVertices; i++) 
+        {
             // Pick all vertices as destination for the above picked source.
             for (int j = 0; j < numVertices; j++) {
                 // If vertex k is on the shortest path from i to j, then update the value of dist[i][j].
