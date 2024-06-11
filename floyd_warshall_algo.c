@@ -17,7 +17,8 @@ void floydWarshall(int graph[V][V], int numVertices)
     }
 
 // Add all vertices one by one to the set of intermediate vertices.
-    for (int k = 0; k < numVertices; k++) {
+    for (int k = 0; k < numVertices; k++) 
+    {
         // Pick all vertices as source one by one.
         for (int i = 0; i < numVertices; i++) {
             // Pick all vertices as destination for the above picked source.
