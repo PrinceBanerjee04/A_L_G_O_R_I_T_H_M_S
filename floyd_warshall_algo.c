@@ -52,7 +52,8 @@ void floydWarshall(int graph[V][V], int numVertices)
     }
 }
 
-int main() {
+int main() 
+{
     int numVertices;
     
     printf("Enter the number of vertices: ");
