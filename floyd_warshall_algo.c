@@ -43,7 +43,8 @@ void floydWarshall(int graph[V][V], int numVertices)
             if (dist[i][j] == INT_MAX) 
             {
                 printf("INF ");
-            } else {
+            } else 
+            {
                 printf("%d ", dist[i][j]);
             }
         }
