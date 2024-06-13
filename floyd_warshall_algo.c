@@ -62,7 +62,8 @@ int main()
     printf("Enter the adjacency matrix (use %d for infinity):\n", INT_MAX);
     for (int i = 0; i < numVertices; i++) 
     {
-        for (int j = 0; j < numVertices; j++) {
+        for (int j = 0; j < numVertices; j++) 
+        {
             scanf("%d", &graph[i][j]);
         }
     }
