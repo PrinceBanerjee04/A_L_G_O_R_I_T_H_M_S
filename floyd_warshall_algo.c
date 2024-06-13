@@ -38,7 +38,8 @@ void floydWarshall(int graph[V][V], int numVertices)
     printf("Shortest distances between every pair of vertices:\n");
     for (int i = 0; i < numVertices; i++) 
     {
-        for (int j = 0; j < numVertices; j++) {
+        for (int j = 0; j < numVertices; j++) 
+        {
             if (dist[i][j] == INT_MAX) {
                 printf("INF ");
             } else {
