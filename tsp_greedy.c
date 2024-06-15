@@ -37,7 +37,8 @@ void nearestNeighbor(int** graph, int* path, int n) {
     path[0] = 0;
     visited[0] = 1;
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < n; i++) 
+    {
         int nearestCity = -1;
         int minDistance = INT_MAX;
         for (int j = 0; j < n; j++) {
