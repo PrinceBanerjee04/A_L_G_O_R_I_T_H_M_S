@@ -30,7 +30,8 @@ void swap(int* a, int* b)
 void nearestNeighbor(int** graph, int* path, int n) 
 {
     int visited[n];
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         visited[i] = 0;
     }
 
