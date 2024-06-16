@@ -75,7 +75,8 @@ int main() {
     nearestNeighbor(graph, path, n);
 
     printf("Shortest Hamiltonian cycle: ");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         printf("%d ", path[i]);
     }
     printf("\nTotal distance: %d\n", calculateDistance(graph, path, n));
