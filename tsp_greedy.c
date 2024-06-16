@@ -45,7 +45,8 @@ void nearestNeighbor(int** graph, int* path, int n)
         int minDistance = INT_MAX;
         for (int j = 0; j < n; j++) 
         {
-            if (!visited[j] && graph[currentCity][j] < minDistance) {
+            if (!visited[j] && graph[currentCity][j] < minDistance) 
+            {
                 minDistance = graph[currentCity][j];
                 nearestCity = j;
             }
