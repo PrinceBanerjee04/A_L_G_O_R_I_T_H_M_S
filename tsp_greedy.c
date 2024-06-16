@@ -58,7 +58,8 @@ void nearestNeighbor(int** graph, int* path, int n)
 }
 
 
-int main() {
+int main() 
+{
     int n;
     printf("Enter the number of cities: ");
     scanf("%d", &n);
