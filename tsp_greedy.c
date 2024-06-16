@@ -80,7 +80,8 @@ int main() {
     }
     printf("\nTotal distance: %d\n", calculateDistance(graph, path, n));
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         free(graph[i]);
     }
     free(graph);
