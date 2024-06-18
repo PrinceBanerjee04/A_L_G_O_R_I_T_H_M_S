@@ -33,7 +33,8 @@ int* mergePaths(int* path1, int n1, int* path2, int n2, int** graph, int* minDis
 {
     int* mergedPath = (int*)malloc((n1 + n2) * sizeof(int));
 
-    for (int i = 0; i < n1; i++) {
+    for (int i = 0; i < n1; i++) 
+    {
         mergedPath[i] = path1[i];
     }
 
