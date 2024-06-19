@@ -66,7 +66,8 @@ int* mergePaths(int* path1, int n1, int* path2, int n2, int** graph, int* minDis
 
 int* tspDivideAndConquer(int** graph, int* path, int n, int* minDistance) 
 {
-    if (n <= 3) {
+    if (n <= 3) 
+    {
         // Solve the TSP using brute force for small number of cities
         permute(graph, path, 0, n, minDistance, path);
         return path;
