@@ -52,7 +52,8 @@ int* mergePaths(int* path1, int n1, int* path2, int n2, int** graph, int* minDis
             {
                 *minDistance = newDistance;
                 // Reorder the merged path accordingly
-                for (int k = 0; k <= i; k++) {
+                for (int k = 0; k <= i; k++) 
+                {
                     swap(&mergedPath[k], &mergedPath[n1 + j]);
                     j = n2;
                 }
