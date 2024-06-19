@@ -48,7 +48,8 @@ int* mergePaths(int* path1, int n1, int* path2, int n2, int** graph, int* minDis
     {
         for (int j = 0; j < n2; j++) {
             int newDistance = graph[path1[i]][path2[j]] + graph[path1[(i + 1) % n1]][path2[(j + 1) % n2]];
-            if (newDistance < *minDistance) {
+            if (newDistance < *minDistance) 
+            {
                 *minDistance = newDistance;
                 // Reorder the merged path accordingly
                 for (int k = 0; k <= i; k++) {
