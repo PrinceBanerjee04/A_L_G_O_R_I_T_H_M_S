@@ -86,7 +86,8 @@ int* tspDivideAndConquer(int** graph, int* path, int n, int* minDistance)
 }
 
 
-int main() {
+int main() 
+{
     int n;
     printf("Enter the number of cities: ");
     scanf("%d", &n);
