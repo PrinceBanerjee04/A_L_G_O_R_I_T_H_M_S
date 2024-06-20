@@ -115,7 +115,8 @@ int main()
     int* minPath = tspDivideAndConquer(graph, path, n, &minDistance);
 
     printf("Shortest Hamiltonian cycle: ");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         printf("%d ", minPath[i]);
     }
     printf("\nTotal distance: %d\n", minDistance);
