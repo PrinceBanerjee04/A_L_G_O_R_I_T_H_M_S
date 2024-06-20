@@ -46,7 +46,8 @@ int* mergePaths(int* path1, int n1, int* path2, int n2, int** graph, int* minDis
     // Find the shortest edge between the two halves
     for (int i = 0; i < n1; i++) 
     {
-        for (int j = 0; j < n2; j++) {
+        for (int j = 0; j < n2; j++) 
+        {
             int newDistance = graph[path1[i]][path2[j]] + graph[path1[(i + 1) % n1]][path2[(j + 1) % n2]];
             if (newDistance < *minDistance) 
             {
