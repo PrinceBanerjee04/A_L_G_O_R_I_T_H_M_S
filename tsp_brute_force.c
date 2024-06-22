@@ -28,7 +28,8 @@ void swap(int* a, int* b) {
 
 void permute(int** graph, int* path, int start, int n, int* minDistance, int* minPath) 
 {
-    if (start == n - 1) {
+    if (start == n - 1) 
+    {
         int distance = calculateDistance(graph, path, n);
         if (distance < *minDistance) {
             *minDistance = distance;
