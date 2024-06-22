@@ -50,7 +50,8 @@ void permute(int** graph, int* path, int start, int n, int* minDistance, int* mi
     }
 }
 
-int main() {
+int main() 
+{
     int n;
     printf("Enter the number of cities: ");
     scanf("%d", &n);
