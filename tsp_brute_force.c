@@ -60,7 +60,8 @@ int main()
     for (int i = 0; i < n; i++) 
     {
         graph[i] = (int*)malloc(n * sizeof(int));
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < n; j++) 
+        {
             printf("Enter the distance between city %d and city %d: ", i, j);
             scanf("%d", &graph[i][j]);
         }
