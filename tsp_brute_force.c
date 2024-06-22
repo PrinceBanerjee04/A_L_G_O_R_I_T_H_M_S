@@ -78,7 +78,8 @@ int main()
     permute(graph, path, 0, n, &minDistance, minPath);
 
     printf("Shortest Hamiltonian cycle: ");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         printf("%d ", minPath[i]);
     }
     printf("\nTotal distance: %d\n", minDistance);
