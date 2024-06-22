@@ -66,7 +66,8 @@ int main()
     }
 
     int* path = (int*)malloc(n * sizeof(int));
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         path[i] = i;
     }
 
