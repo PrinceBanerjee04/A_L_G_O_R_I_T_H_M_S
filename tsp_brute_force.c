@@ -42,7 +42,8 @@ void permute(int** graph, int* path, int start, int n, int* minDistance, int* mi
         }
         return;
     }
-    for (int i = start; i < n; i++) {
+    for (int i = start; i < n; i++) 
+    {
         swap(&path[start], &path[i]);
         permute(graph, path, start + 1, n, minDistance, minPath);
         swap(&path[start], &path[i]); // Backtrack
