@@ -35,7 +35,8 @@ void permute(int** graph, int* path, int start, int n, int* minDistance, int* mi
         if (distance < *minDistance) 
         {
             *minDistance = distance;
-            for (int i = 0; i < n; i++) {
+            for (int i = 0; i < n; i++) 
+            {
                 minPath[i] = path[i];
             }
         }
