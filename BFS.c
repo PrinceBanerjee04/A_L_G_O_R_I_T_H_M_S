@@ -41,7 +41,8 @@ int dequeue()
     return node;
 }
 
-bool isQueueEmpty() {
+bool isQueueEmpty() 
+{
     return front == -1 || front > rear;
 }
 
