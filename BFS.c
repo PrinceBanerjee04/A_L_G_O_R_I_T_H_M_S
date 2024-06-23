@@ -66,7 +66,8 @@ void bfs(int start, int numNodes) {
     }
 }
 
-int main() {
+int main() 
+{
     int numNodes, numEdges;
     printf("Enter the number of nodes: ");
     scanf("%d", &numNodes);
