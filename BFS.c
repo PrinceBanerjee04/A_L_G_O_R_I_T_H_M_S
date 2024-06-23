@@ -29,7 +29,8 @@ void enqueue(int node)
 }
 
 // Function to remove and return a node from the queue
-int dequeue() {
+int dequeue() 
+{
     if (front == -1 || front > rear) {
         printf("Queue is empty.\n");
         return -1;
