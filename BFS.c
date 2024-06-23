@@ -20,7 +20,8 @@ void enqueue(int node)
         printf("Queue is full.\n");
         return;
     }
-    if (front == -1) {
+    if (front == -1) 
+    {
         front = 0;
     }
     rear++;
