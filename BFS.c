@@ -13,8 +13,10 @@ int queue[MAX_NODES];
 int front = -1, rear = -1;
 
 // Function to add a node to the queue
-void enqueue(int node) {
-    if (rear == MAX_NODES - 1) {
+void enqueue(int node) 
+{
+    if (rear == MAX_NODES - 1) 
+    {
         printf("Queue is full.\n");
         return;
     }
