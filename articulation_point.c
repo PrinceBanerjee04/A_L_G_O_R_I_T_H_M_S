@@ -50,7 +50,8 @@ Graph* createGraph(int numVertices)
     graph->is_articulation_point = (bool*)malloc(numVertices * sizeof(bool));
     graph->time = 0;
 
-    for (int i = 0; i < numVertices; ++i) {
+    for (int i = 0; i < numVertices; ++i) 
+    {
         graph->array[i].head = NULL;
         graph->discovery_time[i] = -1;
         graph->low_time[i] = -1;
