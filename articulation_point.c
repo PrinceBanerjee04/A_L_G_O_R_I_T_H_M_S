@@ -5,7 +5,8 @@
 #define MAX_VERTICES 100
 
 // Adjacency list node
-typedef struct Node {
+typedef struct Node 
+{
     int vertex;
     struct Node* next;
 } Node;
