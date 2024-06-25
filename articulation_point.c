@@ -12,7 +12,8 @@ typedef struct Node
 } Node;
 
 // Adjacency list
-typedef struct {
+typedef struct 
+{
     Node* head;
 } AdjList;
 
