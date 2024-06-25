@@ -75,7 +75,8 @@ void addEdge(Graph* graph, int src, int dest)
 }
 
 // DFS function to find articulation points
-void DFS(Graph* graph, int v, int parent) {
+void DFS(Graph* graph, int v, int parent) 
+{
     graph->visited[v] = true;
     graph->discovery_time[v] = graph->low_time[v] = ++graph->time;
     int children = 0;
