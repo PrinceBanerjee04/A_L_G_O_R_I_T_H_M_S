@@ -39,7 +39,8 @@ Node* createNode(int v)
 }
 
 // Initialize a graph with given number of vertices
-Graph* createGraph(int numVertices) {
+Graph* createGraph(int numVertices) 
+{
     Graph* graph = (Graph*)malloc(sizeof(Graph));
     graph->numVertices = numVertices;
     graph->array = (AdjList*)malloc(numVertices * sizeof(AdjList));
