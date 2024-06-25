@@ -54,6 +54,5 @@ int main()
     printf("DFS traversal starting from node %d: ", startNode);
     dfs(startNode);
     printf("\n");
-
     return 0;
 }
