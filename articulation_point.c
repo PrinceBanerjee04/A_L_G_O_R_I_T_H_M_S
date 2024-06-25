@@ -63,7 +63,8 @@ Graph* createGraph(int numVertices)
 }
 
 // Add an edge to the graph
-void addEdge(Graph* graph, int src, int dest) {
+void addEdge(Graph* graph, int src, int dest) 
+{
     Node* newNode = createNode(dest);
     newNode->next = graph->array[src].head;
     graph->array[src].head = newNode;
