@@ -18,7 +18,8 @@ typedef struct
 } AdjList;
 
 // Graph structure
-typedef struct {
+typedef struct 
+{
     int numVertices;
     AdjList* array;
     int* discovery_time;
