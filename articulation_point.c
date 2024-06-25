@@ -30,7 +30,8 @@ typedef struct
 } Graph;
 
 // Create a new adjacency list node
-Node* createNode(int v) {
+Node* createNode(int v) 
+{
     Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->vertex = v;
     newNode->next = NULL;
