@@ -81,7 +81,8 @@ void DFS(Graph* graph, int v, int parent)
     graph->discovery_time[v] = graph->low_time[v] = ++graph->time;
     int children = 0;
 
-    for (Node* i = graph->array[v].head; i != NULL; i = i->next) {
+    for (Node* i = graph->array[v].head; i != NULL; i = i->next) 
+    {
         int u = i->vertex;
 
         if (!graph->visited[u]) 
