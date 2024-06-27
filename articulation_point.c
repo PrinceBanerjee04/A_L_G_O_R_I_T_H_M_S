@@ -116,7 +116,8 @@ void findArticulationPoints(Graph* graph)
     printf("Articulation points in the graph:\n");
     for (int i = 0; i < graph->numVertices; ++i) 
     {
-        if (graph->is_articulation_point[i]) {
+        if (graph->is_articulation_point[i]) 
+        {
             printf("%d\n", i);
         }
     }
