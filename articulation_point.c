@@ -135,7 +135,8 @@ int main() {
     scanf("%d", &numEdges);
 
     printf("Enter the edges (source destination):\n");
-    for (int i = 0; i < numEdges; ++i) {
+    for (int i = 0; i < numEdges; ++i) 
+    {
         int src, dest;
         scanf("%d %d", &src, &dest);
         addEdge(graph, src, dest);
