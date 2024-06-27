@@ -84,7 +84,8 @@ void DFS(Graph* graph, int v, int parent)
     for (Node* i = graph->array[v].head; i != NULL; i = i->next) {
         int u = i->vertex;
 
-        if (!graph->visited[u]) {
+        if (!graph->visited[u]) 
+        {
             children++;
             DFS(graph, u, v);
             graph->low_time[v] = (graph->low_time[v] < graph->low_time[u]) ? graph->low_time[v] : graph->low_time[u];
