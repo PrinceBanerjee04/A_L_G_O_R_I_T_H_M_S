@@ -107,7 +107,8 @@ void findArticulationPoints(Graph* graph)
 {
     for (int i = 0; i < graph->numVertices; ++i) 
     {
-        if (!graph->visited[i]) {
+        if (!graph->visited[i]) 
+        {
             DFS(graph, i, -1);
         }
     }
