@@ -124,7 +124,8 @@ void findArticulationPoints(Graph* graph)
 }
 
 // Main function
-int main() {
+int main() 
+{
     int numVertices, numEdges;
     printf("Enter the number of vertices: ");
     scanf("%d", &numVertices);
