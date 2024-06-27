@@ -103,7 +103,8 @@ void DFS(Graph* graph, int v, int parent)
 
 // Find articulation points in the graph
 void findArticulationPoints(Graph* graph) {
-    for (int i = 0; i < graph->numVertices; ++i) {
+    for (int i = 0; i < graph->numVertices; ++i) 
+    {
         if (!graph->visited[i]) {
             DFS(graph, i, -1);
         }
