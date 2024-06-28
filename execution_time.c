@@ -100,6 +100,5 @@ int main()
         printf("%d ", arr2[i]);
     }
     printf("\nBubble Sort Time: %f seconds\n", bubbleSortTime);
-
     return 0;
 }
