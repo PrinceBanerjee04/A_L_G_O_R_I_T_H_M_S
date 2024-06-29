@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <limits.h>
 
-#define V 100 // Define the maximum number of vertices
+// Define the maximum number of vertices
+#define V 100
 
 void floydWarshall(int graph[V][V], int numVertices) 
 {
