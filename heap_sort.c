@@ -67,6 +67,5 @@ int main()
 
     printf("Sorted array: ");
     print_array(arr, n);
-
     return 0;
 }
