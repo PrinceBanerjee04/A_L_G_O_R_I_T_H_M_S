@@ -46,7 +46,8 @@ void swapNode(Node** a, Node** b)
 }
 
 // Standard min heapify function
-void minHeapify(PriorityQueue* queue, int idx) {
+void minHeapify(PriorityQueue* queue, int idx) 
+{
     int smallest = idx;
     int left = 2 * idx + 1;
     int right = 2 * idx + 2;
