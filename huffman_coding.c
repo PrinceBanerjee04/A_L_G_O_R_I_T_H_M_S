@@ -66,7 +66,8 @@ void minHeapify(PriorityQueue* queue, int idx)
 }
 
 // Check if size of heap is 1
-int isSizeOne(PriorityQueue* queue) {
+int isSizeOne(PriorityQueue* queue) 
+{
     return queue->size == 1;
 }
 
