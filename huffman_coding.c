@@ -72,7 +72,8 @@ int isSizeOne(PriorityQueue* queue)
 }
 
 // Extract minimum node from priority queue
-Node* extractMin(PriorityQueue* queue) {
+Node* extractMin(PriorityQueue* queue) 
+{
     Node* temp = queue->array[0];
     queue->array[0] = queue->array[queue->size - 1];
     --queue->size;
