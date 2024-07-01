@@ -86,7 +86,8 @@ void insertNode(PriorityQueue* queue, Node* node)
 {
     ++queue->size;
     int i = queue->size - 1;
-    while (i && node->freq < queue->array[(i - 1) / 2]->freq) {
+    while (i && node->freq < queue->array[(i - 1) / 2]->freq) 
+    {
         queue->array[i] = queue->array[(i - 1) / 2];
         i = (i - 1) / 2;
     }
