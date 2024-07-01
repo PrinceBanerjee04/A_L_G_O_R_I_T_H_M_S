@@ -38,7 +38,8 @@ PriorityQueue* createPriorityQueue(unsigned capacity)
 }
 
 // Function to swap two nodes in the priority queue
-void swapNode(Node** a, Node** b) {
+void swapNode(Node** a, Node** b) 
+{
     Node* temp = *a;
     *a = *b;
     *b = temp;
