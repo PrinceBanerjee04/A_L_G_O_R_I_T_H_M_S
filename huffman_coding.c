@@ -18,7 +18,8 @@ typedef struct PriorityQueue {
 } PriorityQueue;
 
 // Function to create a new node
-Node* newNode(char data, unsigned freq) {
+Node* newNode(char data, unsigned freq) 
+{
     Node* node = (Node*)malloc(sizeof(Node));
     node->left = node->right = NULL;
     node->data = data;
