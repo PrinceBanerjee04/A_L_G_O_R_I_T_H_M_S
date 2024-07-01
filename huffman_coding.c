@@ -28,7 +28,8 @@ Node* newNode(char data, unsigned freq)
 }
 
 // Function to create a priority queue
-PriorityQueue* createPriorityQueue(unsigned capacity) {
+PriorityQueue* createPriorityQueue(unsigned capacity) 
+{
     PriorityQueue* queue = (PriorityQueue*)malloc(sizeof(PriorityQueue));
     queue->size = 0;
     queue->capacity = capacity;
