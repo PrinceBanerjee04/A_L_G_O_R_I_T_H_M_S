@@ -58,7 +58,8 @@ void minHeapify(PriorityQueue* queue, int idx)
     if (right < queue->size && queue->array[right]->freq < queue->array[smallest]->freq)
         smallest = right;
 
-    if (smallest != idx) {
+    if (smallest != idx) 
+    {
         swapNode(&queue->array[smallest], &queue->array[idx]);
         minHeapify(queue, smallest);
     }
