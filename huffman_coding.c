@@ -95,7 +95,8 @@ void insertNode(PriorityQueue* queue, Node* node)
 }
 
 // Function to build Huffman tree
-Node* buildHuffmanTree(char data[], int freq[], int size) {
+Node* buildHuffmanTree(char data[], int freq[], int size) 
+{
     Node *left, *right, *top;
     PriorityQueue* queue = createPriorityQueue(size);
     for (int i = 0; i < size; ++i)
