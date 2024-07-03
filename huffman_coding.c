@@ -101,7 +101,8 @@ Node* buildHuffmanTree(char data[], int freq[], int size)
     PriorityQueue* queue = createPriorityQueue(size);
     for (int i = 0; i < size; ++i)
         insertNode(queue, newNode(data[i], freq[i]));
-    while (!isSizeOne(queue)) {
+    while (!isSizeOne(queue)) 
+    {
         left = extractMin(queue);
         right = extractMin(queue);
         top = newNode('$', left->freq + right->freq);
