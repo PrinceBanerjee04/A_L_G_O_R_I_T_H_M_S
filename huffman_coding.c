@@ -116,7 +116,8 @@ Node* buildHuffmanTree(char data[], int freq[], int size)
 // Function to print Huffman codes from the root of Huffman tree
 void printCodes(Node* root, int arr[], int top) 
 {
-    if (root->left) {
+    if (root->left) 
+    {
         arr[top] = 0;
         printCodes(root->left, arr, top + 1);
     }
