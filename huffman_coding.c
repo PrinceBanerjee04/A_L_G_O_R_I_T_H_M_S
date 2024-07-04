@@ -125,7 +125,8 @@ void printCodes(Node* root, int arr[], int top)
         arr[top] = 1;
         printCodes(root->right, arr, top + 1);
     }
-    if (!root->left && !root->right) {
+    if (!root->left && !root->right) 
+    {
         printf("%c: ", root->data);
         for (int i = 0; i < top; ++i)
             printf("%d", arr[i]);
