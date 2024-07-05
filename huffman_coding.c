@@ -136,7 +136,8 @@ void printCodes(Node* root, int arr[], int top)
 }
 
 // Huffman coding function
-void HuffmanCodes(char data[], int freq[], int size) {
+void HuffmanCodes(char data[], int freq[], int size) 
+{
     Node* root = buildHuffmanTree(data, freq, size);
     int arr[MAX_VERTICES], top = 0;
     printCodes(root, arr, top);
