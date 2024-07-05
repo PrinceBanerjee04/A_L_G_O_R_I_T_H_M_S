@@ -143,7 +143,8 @@ void HuffmanCodes(char data[], int freq[], int size)
     printCodes(root, arr, top);
 }
 
-int main() {
+int main() 
+{
     char data[] = { 'a', 'b', 'c', 'd', 'e', 'f' };
     int freq[] = { 5, 9, 12, 13, 16, 45 };
     int size = sizeof(data) / sizeof(data[0]);
