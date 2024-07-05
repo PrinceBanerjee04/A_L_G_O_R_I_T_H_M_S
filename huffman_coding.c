@@ -121,7 +121,8 @@ void printCodes(Node* root, int arr[], int top)
         arr[top] = 0;
         printCodes(root->left, arr, top + 1);
     }
-    if (root->right) {
+    if (root->right) 
+    {
         arr[top] = 1;
         printCodes(root->right, arr, top + 1);
     }
