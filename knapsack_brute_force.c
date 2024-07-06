@@ -38,6 +38,5 @@ int main()
 
     int max_value = knapsack(items, n, capacity);
     printf("Maximum value that can be obtained: %d\n", max_value);
-
     return 0;
 }
