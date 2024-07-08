@@ -53,7 +53,8 @@ int main() {
     printf("Selected items (index): ");
     for (int i = 0; i < n; i++) 
     {
-        if (subset[i] == 1) {
+        if (subset[i] == 1) 
+        {
             printf("%d ", i);
         }
     }
