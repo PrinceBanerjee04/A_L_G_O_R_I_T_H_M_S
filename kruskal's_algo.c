@@ -33,7 +33,8 @@ void Union(Subset subsets[], int x, int y)
     {
         subsets[xroot].parent = yroot;
     } 
-    else if (subsets[xroot].rank > subsets[yroot].rank) {
+    else if (subsets[xroot].rank > subsets[yroot].rank) 
+    {
         subsets[yroot].parent = xroot;
     } else {
         subsets[yroot].parent = xroot;
