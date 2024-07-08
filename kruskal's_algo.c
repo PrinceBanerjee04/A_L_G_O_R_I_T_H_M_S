@@ -15,7 +15,8 @@ typedef struct {
 int graph[MAX_NODES][MAX_NODES];
 int numNodes, numEdges;
 
-int find(Subset subsets[], int i) {
+int find(Subset subsets[], int i) 
+{
     if (subsets[i].parent != i) {
         subsets[i].parent = find(subsets, subsets[i].parent);
     }
