@@ -17,7 +17,8 @@ int numNodes, numEdges;
 
 int find(Subset subsets[], int i) 
 {
-    if (subsets[i].parent != i) {
+    if (subsets[i].parent != i) 
+    {
         subsets[i].parent = find(subsets, subsets[i].parent);
     }
     return subsets[i].parent;
