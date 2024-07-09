@@ -43,7 +43,8 @@ void Union(Subset subsets[], int x, int y)
     }
 }
 
-int compare(const void* a, const void* b) {
+int compare(const void* a, const void* b) 
+{
     Edge* edge1 = (Edge*)a;
     Edge* edge2 = (Edge*)b;
     return edge1->weight - edge2->weight;
