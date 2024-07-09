@@ -92,7 +92,8 @@ int main() {
     Edge edges[numEdges];
 
     printf("Enter the edges (source destination weight):\n");
-    for (int i = 0; i < numEdges; i++) {
+    for (int i = 0; i < numEdges; i++) 
+    {
         scanf("%d %d %d", &edges[i].src, &edges[i].dest, &edges[i].weight);
     }
 
