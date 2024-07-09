@@ -50,7 +50,8 @@ int compare(const void* a, const void* b)
     return edge1->weight - edge2->weight;
 }
 
-void kruskalMST() {
+void kruskalMST() 
+{
     Edge result[numNodes];
     int e = 0;
     int i = 0;
