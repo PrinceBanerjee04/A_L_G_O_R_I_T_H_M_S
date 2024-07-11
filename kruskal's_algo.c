@@ -61,7 +61,8 @@ void kruskalMST()
 
     Subset* subsets = (Subset*)malloc(numNodes * sizeof(Subset));
 
-    for (int v = 0; v < numNodes; v++) {
+    for (int v = 0; v < numNodes; v++) 
+    {
         subsets[v].parent = v;
         subsets[v].rank = 0;
     }
