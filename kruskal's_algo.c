@@ -67,7 +67,8 @@ void kruskalMST()
         subsets[v].rank = 0;
     }
 
-    while (e < numNodes - 1 && i < numEdges) {
+    while (e < numNodes - 1 && i < numEdges) 
+    {
         Edge next_edge = edges[i++];
         int x = find(subsets, next_edge.src);
         int y = find(subsets, next_edge.dest);
