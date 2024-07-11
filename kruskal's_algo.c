@@ -80,7 +80,8 @@ void kruskalMST()
     }
 
     printf("Edges in MST:\n");
-    for (i = 0; i < e; i++) {
+    for (i = 0; i < e; i++) 
+    {
         printf("%d - %d\n", result[i].src, result[i].dest);
     }
 
