@@ -86,7 +86,8 @@ void kruskalMST()
     free(subsets);
 }
 
-int main() {
+int main() 
+{
     printf("Enter the number of nodes: ");
     scanf("%d", &numNodes);
 
