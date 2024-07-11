@@ -73,7 +73,8 @@ void kruskalMST()
         int x = find(subsets, next_edge.src);
         int y = find(subsets, next_edge.dest);
 
-        if (x != y) {
+        if (x != y) 
+        {
             result[e++] = next_edge;
             Union(subsets, x, y);
         }
