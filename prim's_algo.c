@@ -33,7 +33,8 @@ void printMST(int numNodes)
         printf("%d - %d    %d \n", parent[i], i, graph[i][parent[i]]);
 }
 
-void primMST(int numNodes) {
+void primMST(int numNodes) 
+{
     for (int i = 0; i < numNodes; i++) {
         key[i] = INT_MAX;
         mstSet[i] = false;
