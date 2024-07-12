@@ -26,7 +26,8 @@ int minKey(int numNodes)
     return min_index;
 }
 
-void printMST(int numNodes) {
+void printMST(int numNodes) 
+{
     printf("Edge   Weight\n");
     for (int i = 1; i < numNodes; i++)
         printf("%d - %d    %d \n", parent[i], i, graph[i][parent[i]]);
