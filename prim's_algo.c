@@ -63,7 +63,8 @@ void primMST(int numNodes)
     printMST(numNodes);
 }
 
-int main() {
+int main() 
+{
     int numNodes, numEdges;
     printf("Enter the number of nodes: ");
     scanf("%d", &numNodes);
