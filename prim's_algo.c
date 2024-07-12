@@ -10,7 +10,8 @@ int parent[MAX_NODES];
 int key[MAX_NODES];
 bool mstSet[MAX_NODES];
 
-int minKey(int numNodes) {
+int minKey(int numNodes) 
+{
     int min = INT_MAX, min_index;
 
     for (int v = 0; v < numNodes; v++) {
