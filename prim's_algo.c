@@ -72,7 +72,8 @@ int main() {
     scanf("%d", &numEdges);
 
     printf("Enter the adjacency matrix:\n");
-    for (int i = 0; i < numNodes; i++) {
+    for (int i = 0; i < numNodes; i++) 
+    {
         for (int j = 0; j < numNodes; j++)
         {
             scanf("%d", &graph[i][j]);
