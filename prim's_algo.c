@@ -35,7 +35,8 @@ void printMST(int numNodes)
 
 void primMST(int numNodes) 
 {
-    for (int i = 0; i < numNodes; i++) {
+    for (int i = 0; i < numNodes; i++) 
+    {
         key[i] = INT_MAX;
         mstSet[i] = false;
     }
