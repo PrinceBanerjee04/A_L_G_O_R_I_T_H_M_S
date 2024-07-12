@@ -16,7 +16,8 @@ int minKey(int numNodes)
 
     for (int v = 0; v < numNodes; v++) 
     {
-        if (mstSet[v] == false && key[v] < min) {
+        if (mstSet[v] == false && key[v] < min) 
+        {
             min = key[v];
             min_index = v;
         }
