@@ -50,7 +50,8 @@ void primMST(int numNodes)
 
         mstSet[u] = true;
 
-        for (int v = 0; v < numNodes; v++) {
+        for (int v = 0; v < numNodes; v++) 
+        {
             if (graph[u][v] && mstSet[v] == false && graph[u][v] < key[v]) {
                 parent[v] = u;
                 key[v] = graph[u][v];
