@@ -44,7 +44,8 @@ void primMST(int numNodes)
     key[0] = 0;
     parent[0] = -1;
 
-    for (int count = 0; count < numNodes - 1; count++) {
+    for (int count = 0; count < numNodes - 1; count++) 
+    {
         int u = minKey(numNodes);
 
         mstSet[u] = true;
