@@ -35,3 +35,28 @@ bool isSafe(int board[N][N], int row, int col) {
 
     return true;
 }
+
+bool solveNQueensUtil(int board[N][N], int col) {
+    // If all queens are placed, return true
+    if (col >= N)
+        return true;
+
+    // Try placing a queen in all rows one by one
+    for (int i = 0; i < N; i++) {
+        if (isSafe(board, i, col)) {
+            // Place the queen
+            board[i][col] = 1;
+
+            // Recur to place the rest of the queens
+            if (solveNQueensUtil(board, col + 1))
+                return true;
+
+            // If placing queen in board[i][col] doesn't lead to a solution,
+            // then backtrack and remove the queen from board[i][col]
+            board[i][col] = 0;
+        }
+    }
+
+    // If the queen can't be placed in any row in this column, return false
+    return false;
+}
