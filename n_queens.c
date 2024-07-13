@@ -60,3 +60,21 @@ bool solveNQueensUtil(int board[N][N], int col) {
     // If the queen can't be placed in any row in this column, return false
     return false;
 }
+
+bool solveNQueens() {
+    int board[N][N] = {0};
+
+    if (!solveNQueensUtil(board, 0)) {
+        printf("Solution does not exist\n");
+        return false;
+    }
+
+    // Print the solution
+    printSolution(board);
+    return true;
+}
+
+int main() {
+    solveNQueens();
+    return 0;
+}
