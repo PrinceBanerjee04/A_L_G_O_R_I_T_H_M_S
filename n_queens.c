@@ -40,7 +40,8 @@ bool isSafe(int board[N][N], int row, int col)
     return true;
 }
 
-bool solveNQueensUtil(int board[N][N], int col) {
+bool solveNQueensUtil(int board[N][N], int col) 
+{
     // If all queens are placed, return true
     if (col >= N)
         return true;
