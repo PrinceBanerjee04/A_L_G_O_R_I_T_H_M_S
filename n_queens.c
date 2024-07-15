@@ -68,7 +68,8 @@ bool solveNQueensUtil(int board[N][N], int col)
     return false;
 }
 
-bool solveNQueens() {
+bool solveNQueens() 
+{
     int board[N][N] = {0};
 
     if (!solveNQueensUtil(board, 0)) {
