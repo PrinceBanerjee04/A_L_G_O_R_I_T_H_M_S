@@ -72,7 +72,8 @@ bool solveNQueens()
 {
     int board[N][N] = {0};
 
-    if (!solveNQueensUtil(board, 0)) {
+    if (!solveNQueensUtil(board, 0)) 
+    {
         printf("Solution does not exist\n");
         return false;
     }
