@@ -18,7 +18,8 @@ void printSolution(int board[N][N])
     }
 }
 
-bool isSafe(int board[N][N], int row, int col) {
+bool isSafe(int board[N][N], int row, int col) 
+{
     int i, j;
 
     // Check this row on the left side
