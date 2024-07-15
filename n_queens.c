@@ -49,7 +49,8 @@ bool solveNQueensUtil(int board[N][N], int col)
     // Try placing a queen in all rows one by one
     for (int i = 0; i < N; i++) 
     {
-        if (isSafe(board, i, col)) {
+        if (isSafe(board, i, col)) 
+        {
             // Place the queen
             board[i][col] = 1;
 
