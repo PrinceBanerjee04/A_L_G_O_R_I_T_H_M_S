@@ -48,3 +48,19 @@ bool solveMazeUtil(int maze[N][N], int x, int y, int sol[N][N]) {
 
     return false;
 }
+
+// Function to solve the Maze problem using backtracking
+bool solveMaze(int maze[N][N]) {
+    int sol[N][N] = { { 0, 0, 0, 0 },
+                      { 0, 0, 0, 0 },
+                      { 0, 0, 0, 0 },
+                      { 0, 0, 0, 0 } };
+
+    if (!solveMazeUtil(maze, 0, 0, sol)) {
+        printf("Solution does not exist\n");
+        return false;
+    }
+
+    printSolution(sol);
+    return true;
+}
