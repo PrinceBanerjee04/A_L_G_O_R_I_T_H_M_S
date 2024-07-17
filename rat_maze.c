@@ -17,7 +17,8 @@ void printSolution(int sol[N][N])
 }
 
 // Function to check if x, y is a valid move
-bool isSafe(int maze[N][N], int x, int y) {
+bool isSafe(int maze[N][N], int x, int y) 
+{
     return (x >= 0 && x < N && y >= 0 && y < N && maze[x][y] == 1);
 }
 
