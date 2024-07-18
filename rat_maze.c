@@ -45,7 +45,8 @@ bool solveMazeUtil(int maze[N][N], int x, int y, int sol[N][N])
         }
 
         // Move down in the y direction
-        if (solveMazeUtil(maze, x, y + 1, sol)) {
+        if (solveMazeUtil(maze, x, y + 1, sol)) 
+        {
             return true;
         }
 
