@@ -23,7 +23,8 @@ bool isSafe(int maze[N][N], int x, int y)
 }
 
 // A recursive utility function to solve the Maze problem
-bool solveMazeUtil(int maze[N][N], int x, int y, int sol[N][N]) {
+bool solveMazeUtil(int maze[N][N], int x, int y, int sol[N][N]) 
+{
     // If x, y is the destination cell, return true
     if (x == N - 1 && y == N - 1) {
         sol[x][y] = 1;
