@@ -26,7 +26,8 @@ bool isSafe(int maze[N][N], int x, int y)
 bool solveMazeUtil(int maze[N][N], int x, int y, int sol[N][N]) 
 {
     // If x, y is the destination cell, return true
-    if (x == N - 1 && y == N - 1) {
+    if (x == N - 1 && y == N - 1) 
+    {
         sol[x][y] = 1;
         return true;
     }
