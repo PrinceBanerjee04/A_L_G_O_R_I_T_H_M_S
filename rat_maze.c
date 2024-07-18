@@ -59,7 +59,8 @@ bool solveMazeUtil(int maze[N][N], int x, int y, int sol[N][N])
 }
 
 // Function to solve the Maze problem using backtracking
-bool solveMaze(int maze[N][N]) {
+bool solveMaze(int maze[N][N]) 
+{
     int sol[N][N] = { { 0, 0, 0, 0 },
                       { 0, 0, 0, 0 },
                       { 0, 0, 0, 0 },
