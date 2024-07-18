@@ -33,7 +33,8 @@ bool solveMazeUtil(int maze[N][N], int x, int y, int sol[N][N])
     }
 
     // Check if maze[x][y] is a valid move
-    if (isSafe(maze, x, y)) {
+    if (isSafe(maze, x, y)) 
+    {
         // Mark x, y as part of the solution path
         sol[x][y] = 1;
 
