@@ -76,7 +76,8 @@ bool solveMaze(int maze[N][N])
     return true;
 }
 
-int main() {
+int main() 
+{
     int maze[N][N] = { { 1, 0, 0, 0 },
                        { 1, 1, 0, 1 },
                        { 0, 1, 0, 0 },
