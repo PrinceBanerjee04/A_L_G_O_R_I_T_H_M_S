@@ -66,7 +66,8 @@ bool solveMaze(int maze[N][N])
                       { 0, 0, 0, 0 },
                       { 0, 0, 0, 0 } };
 
-    if (!solveMazeUtil(maze, 0, 0, sol)) {
+    if (!solveMazeUtil(maze, 0, 0, sol))
+    {
         printf("Solution does not exist\n");
         return false;
     }
