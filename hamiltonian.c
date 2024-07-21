@@ -3,7 +3,8 @@
 
 #define V 5
 
-void printSolution(int path[]) {
+void printSolution(int path[]) 
+{
     printf("Hamiltonian Cycle: ");
     for (int i = 0; i < V; i++)
         printf("%d ", path[i]);
