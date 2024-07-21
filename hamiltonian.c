@@ -56,6 +56,7 @@ bool findHamiltonianCycle(int graph[V][V]) {
     printSolution(path);
     return true;
 }
+
 int main() {
     int graph[V][V] = {
         {0, 1, 0, 1, 0},
