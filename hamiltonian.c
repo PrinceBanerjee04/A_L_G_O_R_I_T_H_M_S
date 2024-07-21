@@ -25,7 +25,8 @@ bool isSafe(int v, int graph[V][V], int path[], int pos)
 
 bool isHamiltonianCycleUtil(int graph[V][V], int path[], int pos) 
 {
-    if (pos == V) {
+    if (pos == V) 
+    {
         if (graph[path[pos - 1]][path[0]] == 1)
             return true;
         else
