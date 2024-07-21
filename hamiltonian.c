@@ -20,3 +20,24 @@ bool isSafe(int v, int graph[V][V], int path[], int pos) {
 
     return true;
 }
+
+bool isHamiltonianCycleUtil(int graph[V][V], int path[], int pos) {
+    if (pos == V) {
+        if (graph[path[pos - 1]][path[0]] == 1)
+            return true;
+        else
+            return false;
+    }
+
+    for (int v = 1; v < V; v++) {
+        if (isSafe(v, graph, path, pos)) {
+            path[pos] = v;
+            if (isHamiltonianCycleUtil(graph, path, pos + 1))
+                return true;
+
+            path[pos] = -1; // Backtrack
+        }
+    }
+
+    return false;
+}
