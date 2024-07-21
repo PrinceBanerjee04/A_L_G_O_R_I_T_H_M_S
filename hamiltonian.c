@@ -53,7 +53,8 @@ bool findHamiltonianCycle(int graph[V][V]) {
 
     path[0] = 0; // Starting vertex
 
-    if (!isHamiltonianCycleUtil(graph, path, 1)) {
+    if (!isHamiltonianCycleUtil(graph, path, 1)) 
+    {
         printf("No Hamiltonian Cycle exists\n");
         return false;
     }
