@@ -29,3 +29,16 @@ bool graphColoringUtil(int graph[V][V], int m, int color[], int v) {
 
     return false;
 }
+bool graphColoring(int graph[V][V], int m) {
+    int color[V];
+    for (int i = 0; i < V; i++)
+        color[i] = 0;
+
+    if (!graphColoringUtil(graph, m, color, 0)) {
+        printf("Solution does not exist\n");
+        return false;
+    }
+
+    printSolution(color);
+    return true;
+}
