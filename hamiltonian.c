@@ -48,7 +48,8 @@ bool isHamiltonianCycleUtil(int graph[V][V], int path[], int pos)
     return false;
 }
 
-bool findHamiltonianCycle(int graph[V][V]) {
+bool findHamiltonianCycle(int graph[V][V]) 
+{
     int path[V];
     for (int i = 0; i < V; i++)
         path[i] = -1;
