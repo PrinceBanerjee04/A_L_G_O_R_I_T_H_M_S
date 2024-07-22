@@ -16,6 +16,7 @@ bool isSafe(int v, int graph[V][V], int color[], int c) {
             return false;
     return true;
 }
+
 bool graphColoringUtil(int graph[V][V], int m, int color[], int v) {
     if (v == V)
         return true;
