@@ -8,3 +8,9 @@ void printSolution(int color[]) {
         printf(" %d ", color[i]);
     printf("\n");
 }
+bool isSafe(int v, int graph[V][V], int color[], int c) {
+    for (int i = 0; i < V; i++)
+        if (graph[v][i] && c == color[i])
+            return false;
+    return true;
+}
