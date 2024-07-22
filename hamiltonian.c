@@ -33,7 +33,8 @@ bool isHamiltonianCycleUtil(int graph[V][V], int path[], int pos)
             return false;
     }
 
-    for (int v = 1; v < V; v++) {
+    for (int v = 1; v < V; v++) 
+    {
         if (isSafe(v, graph, path, pos)) {
             path[pos] = v;
             if (isHamiltonianCycleUtil(graph, path, pos + 1))
