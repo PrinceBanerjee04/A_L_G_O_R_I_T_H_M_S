@@ -37,7 +37,8 @@ bool graphColoringUtil(int graph[V][V], int m, int color[], int v)
 
     return false;
 }
-bool graphColoring(int graph[V][V], int m) {
+bool graphColoring(int graph[V][V], int m) 
+{
     int color[V];
     for (int i = 0; i < V; i++)
         color[i] = 0;
