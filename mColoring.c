@@ -11,7 +11,8 @@ void printSolution(int color[])
     printf("\n");
 }
 
-bool isSafe(int v, int graph[V][V], int color[], int c) {
+bool isSafe(int v, int graph[V][V], int color[], int c) 
+{
     for (int i = 0; i < V; i++)
         if (graph[v][i] && c == color[i])
             return false;
