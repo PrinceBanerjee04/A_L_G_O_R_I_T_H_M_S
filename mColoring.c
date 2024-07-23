@@ -26,7 +26,8 @@ bool graphColoringUtil(int graph[V][V], int m, int color[], int v)
 
     for (int c = 1; c <= m; c++) 
     {
-        if (isSafe(v, graph, color, c)) {
+        if (isSafe(v, graph, color, c)) 
+        {
             color[v] = c;
             if (graphColoringUtil(graph, m, color, v + 1))
                 return true;
