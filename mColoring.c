@@ -43,7 +43,8 @@ bool graphColoring(int graph[V][V], int m)
     for (int i = 0; i < V; i++)
         color[i] = 0;
 
-    if (!graphColoringUtil(graph, m, color, 0)) {
+    if (!graphColoringUtil(graph, m, color, 0)) 
+    {
         printf("Solution does not exist\n");
         return false;
     }
