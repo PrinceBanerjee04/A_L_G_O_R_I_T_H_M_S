@@ -63,6 +63,5 @@ int main()
 
     int m = 1; // Number of colors
     graphColoring(graph, m);
-
     return 0;
 }
