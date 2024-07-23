@@ -52,7 +52,8 @@ bool graphColoring(int graph[V][V], int m)
     printSolution(color);
     return true;
 }
-int main() {
+int main() 
+{
     int graph[V][V] = {
         {0, 1, 1, 1},
         {1, 0, 1, 0},
