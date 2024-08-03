@@ -7,6 +7,7 @@ int max(int a, int b)
 {
     return (a > b) ? a : b;
 }
+
 int MaxSumDP(int arr[],int n)
 {
     int current_sum = arr[0], max_sum = arr[0];
