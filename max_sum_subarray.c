@@ -29,6 +29,7 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
+    
     printf("\nGiven Array : ");
     for(i=0;i<n;i++)
     {
