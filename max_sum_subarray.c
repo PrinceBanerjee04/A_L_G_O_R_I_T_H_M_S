@@ -14,3 +14,22 @@ int MaxSumDP(int arr[],int n)
     }
     return max_sum;
 }
+int main()
+{
+    int n;
+    printf("Enter array size: ");
+    scanf("%d", &n);
+    int arr[n],i;
+    printf("Enter array elements: \n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("\nGiven Array : ");
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    printf("\nMaximum Sum: %d",MaxSumDP(arr,n));
+    return 0;
+}
