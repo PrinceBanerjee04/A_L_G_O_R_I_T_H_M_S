@@ -26,6 +26,7 @@ void enqueue(int node)
     rear++;
     queue[rear] = node;
 }
+
 // Function to remove and return a node from the queue
 int dequeue() 
 {
