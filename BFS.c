@@ -4,7 +4,6 @@
 
 // Define the maximum number of nodes in the graph
 #define MAX_NODES 100
-
 // Graph adjacency matrix
 int graph[MAX_NODES][MAX_NODES];
 // Array to track visited nodes
