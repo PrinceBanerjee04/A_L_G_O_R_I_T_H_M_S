@@ -32,6 +32,7 @@ void merge(int a[], int l1, int u1, int l2, int u2)
 void mergesort(int a[], int lower, int upper)
 {
     int mid;
+    
     if (upper > lower)
     {
         mid = (upper + lower) / 2;
