@@ -9,8 +9,7 @@
 #include <time.h>
 int bc = 0, sc = 0, ic = 0; // counters for comparisons
 int bs = 0, ss = 0, is = 0; // counters for swaps
-void print_array(int arr[], int n)
-{
+void print_array(int arr[], int n){
     printf("[");
     for (int i = 0; i < n; i++)
     {
