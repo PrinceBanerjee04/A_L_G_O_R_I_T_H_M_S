@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 int bc = 0, sc = 0, ic = 0; // counters for comparisons
 int bs = 0, ss = 0, is = 0; // counters for swaps
 
