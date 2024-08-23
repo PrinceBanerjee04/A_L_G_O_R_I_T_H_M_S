@@ -2,8 +2,7 @@
 -Execution Time
 -No. of swappings
 -No. of comparisons
--Printing the content after each pass
-*/
+-Printing the content after each pass */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
